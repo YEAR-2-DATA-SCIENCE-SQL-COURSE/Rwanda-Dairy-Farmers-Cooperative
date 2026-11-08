@@ -1,0 +1,22 @@
+BACKUP LAYER 4: FULL DATABASE BACKUP TO A FILE
+===============================================
+Run these in a terminal (Command Prompt / PowerShell), NOT in the Query Tool.
+
+1) Save the whole database to a file:
+
+   pg_dump -U postgres -d rwanda_farmers_cooperative_database -f dairy_backup.sql
+
+2) Restore it from the file:
+
+   psql -U postgres -d rwanda_farmers_cooperative_database -f dairy_backup.sql
+
+If Windows says "pg_dump is not recognized", use the full path of PostgreSQL's
+bin folder, for example:
+
+   "C:\Program Files\PostgreSQL\<version>\bin\pg_dump" -U postgres -d rwanda_farmers_cooperative_database -f dairy_backup.sql
+
+Using pgAdmin instead:
+  - Backup : right-click the database > Backup... > enter a file name > Backup
+  - Restore: right-click the database > Restore... > select the file
+
+Keep a copy of the backup file somewhere else (cloud storage or another disk).
