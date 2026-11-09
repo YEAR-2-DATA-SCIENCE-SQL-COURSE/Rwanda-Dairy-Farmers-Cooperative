@@ -10,7 +10,7 @@ SQL database project (PostgreSQL) for a dairy cooperative, focused on backup and
 | # | Full Name | Student ID |
 |---|-----------|------------|
 | 1 | SAMUEL ALIER | 202510491 |
-| 2 | BOLIS JAGO | 202510433 |
+| 2 | BOLIS JAGO | 202510443 |
 | 3 | ALI SALAHELDEEN | 202510215 |
 | 4 | ATEM GABRIEL | 202511479 |
 | 5 | AHMED GAMAL | 202510422 |
